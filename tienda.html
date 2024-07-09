@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Virtual</h1> <!-- Título de la tienda -->
+    </header>
+
+    <div class="contenedor">
+        <div class="productos">
+        <!--Primer Producto-->
+            <div class="producto">
+                <img src="img/silla.jpg" alt="Silla de madera"> <!-- Imagen del primer producto -->
+                <h3>Silla de madera</h3>
+                <p>Precio: S/ 70</p>
+                <button onclick="addtoCarrito('Silla de madera', 70)">Agregar al carrito</button>
+            </div>
+        <!-- Segundo Producto -->
+            <div class="producto">
+                <img src="img/mesa.png" alt="Mesa de madera"> <!-- Imagen del segundo producto -->
+                <h3>Mesa de madera</h3>
+                <p>Precio: S/ 300</p>
+                <button onclick="addtoCarrito('Mesa de madera', 300)">Agregar al carrito</button>
+            </div>
+        <!-- Tercer Producto -->
+            <div class="producto">
+                <img src="img/escritorio.jfif" alt="Escritorio"> <!-- Imagen del tercer producto -->
+                <h3>Escritorio</h3>
+                <p>Precio: S/ 350</p>
+                <button onclick="addtoCarrito('Escritorio', 350)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="car-list">
+
+            </ul>
+            <p>Total: S/<span id="car-total">0</span></p>
+            <button onclick="compra()">Realizar compra</button>
+        </div>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+</html>
